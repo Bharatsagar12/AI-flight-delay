@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+    
+    /* Background image */
+    background: url("https://images.unsplash.com/photo-1504196606672-aef5c9cefc92") no-repeat center center/cover;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.6);
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    box-shadow: 0 0 20px cyan;
+}
+
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 0 0 20px cyan;
+}
+
+/* Glass container */
+.container {
+    margin: 40px auto;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* Inputs */
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Sections */
+.section {
+    margin: 60px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-align: center;
+
+    background: url("https://images.pexels.com/photos/8394/flight-sky-clouds-fly.jpg?cs=srgb&dl=aeroplane-aircraft-airplane-8394.jpg&fm=jpg");
+    
+    background-size: cover;      /* fills screen nicely */
+    background-position: center; /* centers airplane */
+    background-repeat: no-repeat;
+    height: 100vh;
+}body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: -1;
+}/* Loading text */
+#loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: yellow;
+}
+
+/* Result cards */
+.result-box {
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px cyan;
+}
+
+/* Explanation */
+.explanation {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card animation */
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button click effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Hover glow */
+.container:hover {
+    box-shadow: 0 0 40px cyan;
+}

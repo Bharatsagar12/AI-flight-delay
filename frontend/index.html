@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Flight Delay AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>✈️ DelayAI</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#check">Check</a>
+        <a href="#help">Help</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>✈️ Flight Delay Intelligence System</h1>
+    <p>AI-powered compensation & passenger experience platform</p>
+    <button onclick="document.getElementById('check').scrollIntoView()">
+        Check Your Flight
+    </button>
+</div>
+
+<!-- Main Tool -->
+<div class="container" id="check">
+    <input type="number" id="delay" placeholder="Delay (hours)">
+    
+    <select id="type">
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+    </select>
+
+    <button onclick="checkDelay()">Check Benefits</button>
+
+  <h3 id="result"></h3>
+</div>
+
+<!-- Help Section -->
+<div class="section" id="help">
+    <h2>Help</h2>
+    <p>Enter your delay hours and passenger type to check benefits.</p>
+</div>
+
+<!-- Contact Section -->
+<div class="section" id="contact">
+    <h2>Contact & Support</h2>
+    <p>Email: support@delayai.com</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Available: 24/7 Customer Assistance</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
+</body>
+<div id="loading" style="display:none;">🤖 AI analyzing delay...</div>
+
+<div id="result" class="result-box"></div>
+
+<div id="explanation" class="explanation"></div>
